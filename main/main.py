@@ -19,7 +19,7 @@ def main():
         "--checkpoint_dir",
         type=str,
         required=False,
-        default=r"D:\vscode--llm\my-llm-training\srctwo\checkpoints",
+        default=r"/content/checkpoints",
         help="The output directory where the model predictions and checkpoints will be written when training."
              "And the output directory where the model will be loaded from when at inference",
     )
@@ -76,7 +76,7 @@ def main():
     parser.add_argument(
         "--epochs",
         type=int,
-        default=2,
+        default=1,
         required=False,
         help="Total number of training epochs to perform.",
     )
