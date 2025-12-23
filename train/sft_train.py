@@ -10,6 +10,14 @@ from peft import LoraConfig, TaskType, get_peft_model
 
 data_train=distinguish(train_data)
 eval_data=distinguish(valid_data)
+def format_chat(example):
+    msgs = example["prompt"]
+    text = ""
+    for m in msgs:
+        role = m["role"]
+        content = m["content"]
+        text += f"{role}: {content}\n"
+    return text
 
 def train(args):
     training_args = SFTConfig(
@@ -63,6 +71,6 @@ def train(args):
         args=training_args,
         train_dataset=data_train,
         eval_dataset=eval_data,
-        dataset_text_field="prompt",
+        formatting_func=format_chat,
     )
     trainer.train()
