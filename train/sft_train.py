@@ -1,21 +1,15 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments
-from trl import SFTConfig, SFTTrainer
+from trl import SFTTrainer
 from my_llm_training.data.utils import distinguish, train_data, valid_data
 from peft import LoraConfig, TaskType, get_peft_model
 
-# 处理数据
+# 数据处理
 data_train = distinguish(train_data)
 eval_data = distinguish(valid_data)
 
 def train(args):
-    # 1️⃣ SFTConfig 只负责模型/PEFT 配置
-    sft_config = SFTConfig(
-        model_name_or_path="Qwen/Qwen2.5-7B",
-        peft_config=None  # 如果你想用 LoRA adapter 预训练权重可以填路径
-    )
-
-    # 2️⃣ TrainingArguments 映射原来训练参数
+    # 1️⃣ TrainingArguments 替代原来的 SFTConfig
     training_args = TrainingArguments(
         output_dir=args.checkpoint_dir,
         learning_rate=args.learning_rate,
@@ -33,7 +27,7 @@ def train(args):
         max_grad_norm=args.max_grad_norm,
     )
 
-    # 3️⃣ LoRA 配置
+    # 2️⃣ LoRA 配置
     peft_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
@@ -43,34 +37,35 @@ def train(args):
         lora_dropout=0.1
     )
 
-    # 4️⃣ 加载模型 + tokenizer
+    # 3️⃣ 加载模型 + tokenizer
     model = AutoModelForCausalLM.from_pretrained(
-        pretrained_model_name_or_path="Qwen/Qwen2.5-7B",
+        "Qwen/Qwen2.5-7B",
         torch_dtype=torch.bf16,
-        device_map="auto",  # 推荐自动分配到GPU
+        device_map="auto",
         cache_dir=args.cache_dir
     )
 
     tokenizer = AutoTokenizer.from_pretrained(
-        pretrained_model_name_or_path="Qwen/Qwen2.5-7B",
+        "Qwen/Qwen2.5-7B",
         cache_dir=args.cache_dir
     )
     tokenizer.pad_token = tokenizer.eos_token
 
-    # 5️⃣ 包装模型为 LoRA
+    # 4️⃣ 包装 LoRA
     model = get_peft_model(model, peft_config)
 
-    # 6️⃣ 创建 SFTTrainer
+    # 5️⃣ 创建 SFTTrainer
     trainer = SFTTrainer(
         model=model,
-        tokenizer=tokenizer,  # 注意这里是 tokenizer 而不是 processing_class
+        tokenizer=tokenizer,
         args=training_args,
         train_dataset=data_train,
         eval_dataset=eval_data,
     )
 
-    # 7️⃣ 开始训练
+    # 6️⃣ 训练
     trainer.train()
+
 
 
 
