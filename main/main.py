@@ -151,11 +151,6 @@ def main():
         help="Ratio of total training steps used for a linear warmup from 0 to `learning_rate`.",
     )
     parser.add_argument(
-        "--bf16",
-        action="store_true",
-        help="Whether to use bf16 16-bit (mixed) precision training instead of 32-bit training. Requires Ampere or higher NVIDIA architecture or using CPU (use_cpu) or Ascend NPU.",
-    )
-    parser.add_argument(
         "--use_vllm",
         action="store_true",
         help="Whether to use vLLM for generating completions.",

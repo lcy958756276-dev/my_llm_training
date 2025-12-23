@@ -21,7 +21,7 @@ def train(args):
         warmup_ratio=args.warmup_ratio,
         lr_scheduler_type=args.lr_scheduler_type,
         logging_steps=args.logging_steps,
-        bf16=args.bf16,
+        fp16=True,
         per_device_train_batch_size=args.per_device_train_batch_size,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         max_seq_length=args.max_seq_length,
