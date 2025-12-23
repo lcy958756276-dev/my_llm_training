@@ -1,7 +1,7 @@
 import argparse
 
 from my_llm_training.train.sft_train import train as sft_train
-from my_llm_training.infer.inference import infer
+# from my_llm_training.infer.inference import infer
 
 
 def main():
@@ -178,8 +178,8 @@ def main():
 
     if args.task == "sft_train":
         sft_train(args)
-    elif args.task == "inference":
-        infer(args)
+    # elif args.task == "inference":
+    #     infer(args)
 
 
 if __name__ == '__main__':
