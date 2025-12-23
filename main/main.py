@@ -1,7 +1,7 @@
 import argparse
 
-from srcthree.train.sft_train import train as sft_train
-from srcthree.infer.inference import infer
+from my-llm-traning.train.sft_train import train as sft_train
+from my-llm-traning.infer.inference import infer
 
 
 def main():
