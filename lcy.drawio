@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0">
   <diagram name="Page-1" id="rXgx57DT99HaINVc9TgX">
-    <mxGraphModel dx="861" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="889" dy="515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,29 +52,20 @@
         <mxCell id="UiNykSb--1tG3qhDQe_y-19" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="基于视觉的环境目标识别" vertex="1">
           <mxGeometry height="122.36" width="39.87" x="261" y="235.32" as="geometry" />
         </mxCell>
-        <mxCell id="kWxgV0Vuey-dNxyU6gEC-16" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="UiNykSb--1tG3qhDQe_y-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="471" y="218" />
-              <mxPoint x="390" y="218" />
-              <mxPoint x="390" y="230" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="UiNykSb--1tG3qhDQe_y-23" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="路径规划与轨迹跟踪及作业控制方法设计" vertex="1">
           <mxGeometry height="56.46631967691079" width="129.53739130434784" x="406.3617391304347" y="141.18134894067342" as="geometry" />
         </mxCell>
         <mxCell id="kWxgV0Vuey-dNxyU6gEC-43" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="UiNykSb--1tG3qhDQe_y-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UiNykSb--1tG3qhDQe_y-25" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="轨迹跟踪控制器设计" vertex="1">
-          <mxGeometry height="122.36" width="30.69" x="494.31" y="235.29" as="geometry" />
+        <mxCell id="UiNykSb--1tG3qhDQe_y-25" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="路径规划与轨迹跟踪联合仿真验证" vertex="1">
+          <mxGeometry height="122.36" width="45" x="480" y="235.29" as="geometry" />
         </mxCell>
         <mxCell id="MIdw_ecbD2sXC7KXXu8j-22" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UiNykSb--1tG3qhDQe_y-27" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="&lt;div&gt;排水作业状态感知与机构控制的协同方法研究&lt;/div&gt;" vertex="1">
-          <mxGeometry height="122.36" width="40" x="378" y="235.29" as="geometry" />
+        <mxCell id="UiNykSb--1tG3qhDQe_y-27" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="水下复杂环境的避障策略与路径规划方法研究" vertex="1">
+          <mxGeometry height="122.36" width="52" x="374" y="235.29" as="geometry" />
         </mxCell>
         <mxCell id="UiNykSb--1tG3qhDQe_y-31" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="智能排水机器人系统实现与实验研究" vertex="1">
           <mxGeometry height="56.47058823529412" width="113.68421052631578" x="609.1578947368421" y="141.1764705882353" as="geometry" />
@@ -154,7 +145,7 @@
         <mxCell id="MIdw_ecbD2sXC7KXXu8j-20" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="7Mf3Q4KU5wFijytk47UZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7Mf3Q4KU5wFijytk47UZ-1" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="路径规划与轨迹跟踪联合仿真验证" vertex="1">
+        <mxCell id="7Mf3Q4KU5wFijytk47UZ-1" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:0cm;mso-char-indent-count:0&quot;&gt;排水作业状态感知与机构控制的协同方法研究&lt;span lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="122.3557868820595" width="41.73913043478261" x="538.8947826086957" y="235.28000000000003" as="geometry" />
         </mxCell>
         <mxCell id="kWxgV0Vuey-dNxyU6gEC-12" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="kWxgV0Vuey-dNxyU6gEC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="UiNykSb--1tG3qhDQe_y-49">
@@ -200,8 +191,8 @@
         <mxCell id="MIdw_ecbD2sXC7KXXu8j-15" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="MIdw_ecbD2sXC7KXXu8j-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="UiNykSb--1tG3qhDQe_y-49">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MIdw_ecbD2sXC7KXXu8j-2" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="融合RTK/GPS与IMU的水陆定位方法设计" vertex="1">
-          <mxGeometry height="122.36" width="51" x="196" y="235.32" as="geometry" />
+        <mxCell id="MIdw_ecbD2sXC7KXXu8j-2" parent="UiNykSb--1tG3qhDQe_y-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="融合RTK/GPS&lt;div&gt;IMU与里程计的定位方法设计&lt;/div&gt;" vertex="1">
+          <mxGeometry height="122.36" width="54" x="196" y="235.32" as="geometry" />
         </mxCell>
         <mxCell id="MIdw_ecbD2sXC7KXXu8j-7" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.714;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-4">
           <mxGeometry relative="1" as="geometry">
@@ -224,19 +215,22 @@
         <mxCell id="MIdw_ecbD2sXC7KXXu8j-13" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.274;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MIdw_ecbD2sXC7KXXu8j-19" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.654;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-4">
+        <mxCell id="MIdw_ecbD2sXC7KXXu8j-24" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.513;entryY=0.989;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MIdw_ecbD2sXC7KXXu8j-25" edge="1" parent="UiNykSb--1tG3qhDQe_y-1" source="UiNykSb--1tG3qhDQe_y-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.645;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UiNykSb--1tG3qhDQe_y-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="471" y="218" />
-              <mxPoint x="510" y="218" />
+              <mxPoint x="503" y="218" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="MIdw_ecbD2sXC7KXXu8j-21" edge="1" parent="1" source="UiNykSb--1tG3qhDQe_y-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="UiNykSb--1tG3qhDQe_y-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UiNykSb--1tG3qhDQe_y-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="&lt;div&gt;水下复杂环境的避障策略与路径规划方法研究&lt;/div&gt;" vertex="1">
-          <mxGeometry height="122.35" width="47.89" x="546" y="285.3" as="geometry" />
+        <mxCell id="UiNykSb--1tG3qhDQe_y-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=宋体;" value="轨迹跟踪控制器设计" vertex="1">
+          <mxGeometry height="122.35" width="34" x="550" y="285.3" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
